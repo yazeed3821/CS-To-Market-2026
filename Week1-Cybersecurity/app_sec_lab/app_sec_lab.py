@@ -39,24 +39,24 @@ HTML_TEMPLATE = '''
 def index():
     return render_template_string(HTML_TEMPLATE)
 
-# login route that is vulnerable to SQL Injection
+# Secured login route using parameterized queries
 @app.route('/login', methods=['POST'])
 def login():
     username = request.form.get('username')
     password = request.form.get('password')
     cursor = db_conn.cursor()
 
-    # This is intentionally vulnerable to SQL Injection, it's string concatenation.
-    query = f"SELECT * FROM users WHERE username = '{username}' AND password = '{password}'"
-    print(f"\n[DEBUG] The query executed in the database:\n{query}\n")
+    # SECURE: Using parameterized queries (Prepared Statements)
+    # The database engine treats user input strictly as data, never as executable SQL commands.
+    query = "SELECT * FROM users WHERE username = ? AND password = ?"
+    print(f"\n[DEBUG] Executing parameterized query with values: ({username}, {password})\n")
 
-    cursor.execute(query)
+    cursor.execute(query, (username, password))
     user = cursor.fetchone()
 
     if user:
         return render_template_string(HTML_TEMPLATE, message=f"Login successful! Welcome: {user[1]}", color="green")
     else:
         return render_template_string(HTML_TEMPLATE, message="Login failed: Invalid credentials", color="red")
-
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
