@@ -15,9 +15,9 @@ A comprehensive exploration of fundamental security disciplines: Network Reconna
 
 | Project | Focus | Primary Stack | Link |
 | :--- | :--- | :--- | :--- |
-| **TCP Port Scanner** | Network Reconnaissance & Socket Management | Python (`socket`) | [View Project](./port-scanner/) |
-| **Automated SQLi Scanner** | Web Vulnerability Auditing & Resilience | Python (`requests`) | [View Project](./sqli-scanner/) |
-| **AppSec Vulnerability Lab** | Auth Bypass Exploitation & Secure Remediation | Python (`Flask`, `SQLite`) | [View Project](./app-sec-lab/) |
+| **TCP Port Scanner** | Network Reconnaissance & Socket Management | Python (`socket`) | [View Project](./port_scanner/) |
+| **Automated SQLi Scanner** | Web Vulnerability Auditing & Resilience | Python (`requests`) | [View Project](./sqli_scanner/) |
+| **AppSec Vulnerability Lab** | Auth Bypass Exploitation & Secure Remediation | Python (`Flask`, `SQLite`) | [View Project](./app_sec_lab/) |
 
 ---
 
