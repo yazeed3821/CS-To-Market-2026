@@ -18,7 +18,7 @@ A comprehensive exploration of fundamental security disciplines: Network Reconna
 | **TCP Port Scanner** | Network Reconnaissance & Socket Management | Python (`socket`) | [View Project](./port_scanner/) |
 | **Automated SQLi Scanner** | Web Vulnerability Auditing & Resilience | Python (`requests`) | [View Project](./sqli_scanner/) |
 | **AppSec Vulnerability Lab** | Auth Bypass Exploitation & Secure Remediation | Python (`Flask`, `SQLite`) | [View Project](./app_sec_lab/) |
-| **Kali Recon Lab** | OSINT & Network Enumeration | Kali Tools (`Nmap`, `whois`) | [View Project](./kali-recon-lab/) |
+| **Kali Recon Lab** | OSINT & Network Enumeration | Kali Tools (`Nmap`, `whois`) | [View Project](./kali_recon_lab/) |
 
 ---
 
