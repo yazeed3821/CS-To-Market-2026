@@ -32,6 +32,7 @@ CS-To-Market-2026/
 ├── Week1-Cybersecurity/
 │   ├── port-scanner/
 │   ├── sqli-scanner/
-│   └── app-sec-lab/
+│   ├── app-sec-lab/
+|   └── ...
 ├── Week2-AI/
 └── ...
