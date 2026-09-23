@@ -1,12 +1,14 @@
-# Smart Document Classifier API (V1)
+# Smart Document Classifier API (V2)
 
-An Applied Machine Learning project demonstrating the end-to-end lifecycle of an AI model: from training to backend deployment.
+An Applied Machine Learning project demonstrating the end-to-end lifecycle of an AI model: from data generation and training to backend deployment.
 
 ## Architecture
-1. **Model Training:** NLP text classification using `scikit-learn` (Logistic Regression + TF-IDF).
-2. **Serialization:** Model and vectorizer exported as `.joblib` assets.
-3. **API Integration:** Served as a functional RESTful endpoint using `FastAPI` and `Uvicorn`.
+1. **Data Generation:** Synthetic corporate dataset creation using a Python script (`generate_data.py`).
+2. **Model Training:** NLP text classification using `scikit-learn` (Logistic Regression + TF-IDF) trained on a scaled CSV dataset.
+3. **Serialization:** Model and vectorizer exported as `.joblib` assets.
+4. **API Integration:** Served as a functional RESTful endpoint using `FastAPI` and `Uvicorn`.
 
-## Current Status (V1)
-* Successfully classifies basic text inputs into corporate categories (IT, HR, Finance).
-* **Next Phase:** Data scaling with a larger, real-world corporate dataset to improve prediction accuracy on complex documents.
+## Current Status (V2)
+* Implemented a data generator to create a 600-record CSV dataset (`corporate_tickets.csv`) covering IT, HR, and Finance terminology.
+* Upgraded the training pipeline to read from the CSV, significantly expanding the model's vocabulary and accuracy.
+* Deployed the updated model via the `/classify` API endpoint.
