@@ -1,15 +1,14 @@
-# Server Log Analysis (Data Engineering & Analysis)
+# Week 3: Data Analysis
 
-An end-to-end data analysis pipeline demonstrating the extraction, transformation, and visualization of server logs to detect security threats.
+This module focuses on practical data engineering and analysis, moving from raw, unstructured data to actionable business insights.
 
-## Architecture
-1. **Data Generation:** Simulated standard server traffic and a targeted brute-force attack using a Python script.
-2. **Data Parsing:** Parsed unstructured raw text logs into a structured format.
-3. **Data Analysis:** Utilized `pandas` to aggregate data and identify anomalous patterns (high frequency of 401 unauthorized errors).
-4. **Data Visualization:** Used `matplotlib` to generate graphical reports of the threat analysis.
+## Projects Overview
 
-## Core Skills Demonstrated
-* Unstructured data parsing.
-* Data transformation and aggregation (Pandas).
-* Threat detection (Anomaly detection).
-* Data visualization (Matplotlib).
+* **01-ServerLogs:** Parsed unstructured web server logs to detect security anomalies (brute-force attacks) and visualized the threat distribution.
+* **02-EcommerceCleaning:** Handled missing values (NaN) in a raw commercial dataset, performed data imputation, and aggregated business metrics.
+
+## Core Technologies
+* Python
+* Pandas
+* NumPy
+* Matplotlib

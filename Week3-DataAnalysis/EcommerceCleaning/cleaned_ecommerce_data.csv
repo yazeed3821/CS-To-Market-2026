@@ -1,0 +1,8 @@
+customer_id,age,purchase_amount,category
+101,25.0,150.5,Electronics
+102,29.5,200.0,Clothing
+104,22.0,45.0,Books
+105,35.0,300.75,Electronics
+108,28.0,80.0,Books
+109,29.0,210.2,Clothing
+110,50.0,500.0,Electronics
