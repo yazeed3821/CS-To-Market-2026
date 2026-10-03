@@ -11,6 +11,7 @@ An end-to-end data analysis pipeline demonstrating the extraction, transformatio
 <p align="center">
   <img src="attack_analysis.png" alt="Attack Analysis Chart" width="700">
 </p>
+
 ## Core Skills Demonstrated
 * Unstructured data parsing.
 * Data transformation and aggregation (Pandas).
