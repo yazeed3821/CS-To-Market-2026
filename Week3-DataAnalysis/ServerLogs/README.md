@@ -7,6 +7,10 @@ An end-to-end data analysis pipeline demonstrating the extraction, transformatio
 2. **Data Parsing:** Parsed unstructured raw text logs into a structured format.
 3. **Data Analysis:** Utilized `pandas` to aggregate data and identify anomalous patterns (high frequency of 401 unauthorized errors).
 4. **Data Visualization:** Used `matplotlib` to generate graphical reports of the threat analysis.
+## Analysis Result
+<p align="center">
+  <img src="attack_analysis.png" alt="Attack Analysis Chart" width="700">
+</p>
 
 ## Core Skills Demonstrated
 * Unstructured data parsing.
